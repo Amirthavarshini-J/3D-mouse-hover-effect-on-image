@@ -1,0 +1,42 @@
+ *
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background: #333;
+}
+.image
+{
+    perspective: 3000px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transform-style: preserve-3d;
+}
+.image img
+{
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.3);
+    transform-style: preserve-3d;
+    transition: 0.3s;
+}
+.image:hover img
+{
+    transform: rotateX(0) rotateZ(0) translate3d(0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.0);
+}
+
+
+
+
+
+
+
+
+
